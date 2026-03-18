@@ -1,0 +1,36 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --text: #121212;
+  --muted: #4b5563;
+  --line: #e5e7eb;
+  --card: #ffffff;
+  --code: #f3f4f6;
+  --button: #111111;
+  --button-text: #ffffff;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-pill: 999px;
+
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0d10;
+    --bg-soft: #12161d;
+    --text: #f3f4f6;
+    --muted: #c5cad3;
+    --line: #2a2f3a;
+    --card: #0f1319;
+    --code: #0c1016;
+    --button: #f3f4f6;
+    --button-text: #111111;
+  }
+}

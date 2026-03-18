@@ -1,8 +1,8 @@
 title: STYLES.md
 description: A machine-readable style standard for human and AI collaboration.
-baseurl: "/STYLE.md"
+baseurl: "STYLES.md"
 url: "https://mgifford.github.io"
-github_url: "https://github.com/mgifford/STYLE.md"
+github_url: "https://github.com/mgifford/STYLES.md"
 markdown: kramdown
 kramdown:
   input: GFM

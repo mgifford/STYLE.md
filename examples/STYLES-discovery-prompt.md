@@ -9,20 +9,26 @@ The prompt guides the LLM to audit the project first, then produce a filled-in
 style file that connects to the STYLES.md family while staying true to what the
 project already does.
 
+Primary reference: [https://github.com/mgifford/STYLES.md](https://github.com/mgifford/STYLES.md).
+
 ---
 
 ## How to use this
 
 1. Open a chat session with your LLM of choice.
 2. Paste the prompt below, then attach or paste the relevant project files.
-3. Review the output. Push back on anything that does not match your real project.
-4. Save the result as `STYLES.md` in your project root.
-5. Add `AGENTS.md`, [ACCESSIBILITY.md](https://github.com/mgifford/ACCESSIBILITY.md),
+3. If you want to replicate the style of another project, attach that project's
+   `STYLES.md` as a style seed and label it "source style reference."
+4. Review the output. Push back on anything that does not match your real project.
+5. Save the result as `STYLES.md` in your project root.
+6. Add `AGENTS.md`, [ACCESSIBILITY.md](https://github.com/mgifford/ACCESSIBILITY.md),
    and [SUSTAINABILITY.md](https://github.com/mgifford/sustainability.md) as companion standards.
 
 **Files to attach or paste (bring what you have):**
 - `README.md`
 - Any existing style guide, brand guide, or design tokens file
+- A source `STYLES.md` from a project whose style you want to emulate (optional but strongly recommended)
+- Source CSS or layout files from that reference project (optional, if available)
 - A sample of your best-written documentation (1–3 files)
 - `_config.yml` or equivalent site config, if you have one
 - `package.json` or `pyproject.toml` — helps identify the tech stack
@@ -51,6 +57,14 @@ filled-in Markdown file — not a template with placeholders.
    - Anything the project does well that should be preserved
    - Anything inconsistent that the STYLES.md should normalize
 
+   If I provide a "source style reference" STYLES.md, also extract a
+   **style fingerprint**:
+   - Distinctive typography pairings and hierarchy behavior
+   - Token strategy (core neutrals, accents, semantic tokens, radius/spacing)
+   - Layout motifs (card density, section rhythm, prose width, CTA treatment)
+   - Voice signature (how technical, how direct, how instructional)
+   - Non-negotiables vs. adaptable choices
+
 2. **Ask me three to five clarifying questions before writing.**
    Focus on gaps you cannot resolve from the files alone. For example:
    - Target reading level
@@ -58,6 +72,8 @@ filled-in Markdown file — not a template with placeholders.
    - Whether a GitHub Pages or equivalent site exists or is planned
    - Primary language for AI agent instructions
    - Any known brand or legal constraints
+   - Should the output preserve the source style "as-is" or adapt it to this project's identity?
+   - Which source style elements are non-negotiable (fonts, accent palette, tone, spacing rhythm)?
 
 3. **Generate the STYLES.md.**
    Follow the structure below exactly. Fill in every section with specific,
@@ -115,8 +131,16 @@ A table of CSS custom properties with light value, dark value, and requirement.
 Derive these from existing brand assets if available; otherwise propose values
 consistent with the STYLES.md family defaults.
 
+If a source style reference is provided, include a short note after the table:
+- "Preserved from source" tokens (carry over unchanged)
+- "Adapted for project" tokens (changed deliberately with reason)
+
 ### 3.2 Typography
 Font stack, scaling approach, line length, line height.
+
+If a source style reference is provided, preserve the typography system's intent
+(for example: expressive display + highly legible body) unless I explicitly ask
+for a different direction.
 
 ### 3.3 Responsive design
 Mobile-first breakpoints. At least three layers.
@@ -144,6 +168,7 @@ never override, language and spelling defaults, scope discipline.
 ## 6. References
 
 Link to:
+- STYLES.md (local or https://github.com/mgifford/STYLES.md)
 - AGENTS.md
 - ACCESSIBILITY.md (local or https://github.com/mgifford/ACCESSIBILITY.md)
 - SUSTAINABILITY.md (local or https://github.com/mgifford/sustainability.md)
@@ -173,6 +198,8 @@ not by changing the structure.
 - Do not assume a website surface exists unless the files confirm it.
 - Do not invent brand colors or typography — ask me first if they are not in the
   files I have provided.
+- Do not collapse to generic defaults (for example, "Inter + neutral grays") if
+   a source style reference has stronger, distinctive choices.
 
 Begin by confirming you have read the attached files, then ask your clarifying
 questions before generating anything.
@@ -189,6 +216,11 @@ more useful than "standard English."
 **Attach real writing samples, not just the README.**
 The LLM will match patterns it can see. Attach docs, error messages, or UI copy
 that represents the project's actual voice.
+
+**If you want visual replication, attach a source style reference.**
+Provide the reference `STYLES.md` and, if possible, its CSS/layout files.
+Tell the LLM exactly what to preserve: typography pair, accent logic, spacing
+rhythm, and tone.
 
 **Push back if the tokens are invented.**
 If the LLM proposes colors not in your brand, say so. Either provide the real

@@ -17,7 +17,7 @@ It is part of a three-pillar ecosystem:
 | :--- | :--- |
 | [ACCESSIBILITY.md](https://github.com/mgifford/ACCESSIBILITY.md) | Foundational inclusion requirements and contributor guardrails |
 | [SUSTAINABILITY.md](https://github.com/mgifford/sustainability.md) | Environmental and compute-efficiency constraints |
-| [STYLES.md](https://github.com/mgifford/STYLE.md) | Voice, design tokens, and AI agent style rules |
+| [STYLES.md](https://github.com/mgifford/STYLES.md) | Voice, design tokens, and AI agent style rules |
 
 ## Why does this exist?
 
@@ -45,6 +45,8 @@ standards explicit, version-controlled, and testable.
 | [STYLES-template.md](./STYLES-template.md) | Minimal skeleton to copy and customize |
 | [examples/](./examples/) | Worked examples: formal-gov, tech-minimal, low-bandwidth |
 | [templates/](./templates/) | Blank scaffolds for starting from scratch |
+| [_includes/components/](./_includes/components/) | Reusable Jekyll component partials used by the homepage |
+| [templates/brand-pack/](./templates/brand-pack/) | Copy-ready brand portability kit: tokens, component contracts, and instruction snippets |
 | [AGENTS.md](./AGENTS.md) | Operational instructions for AI coding agents |
 | [ACCESSIBILITY.md](./ACCESSIBILITY.md) | Foundational accessibility commitment |
 | [SUSTAINABILITY.md](./SUSTAINABILITY.md) | Environmental and efficiency constraints |
@@ -52,8 +54,21 @@ standards explicit, version-controlled, and testable.
 ## GitHub Pages
 
 This project publishes a browsable site at
-[mgifford.github.io/STYLE.md](https://mgifford.github.io/STYLE.md) built with
+[mgifford.github.io/STYLES.md](https://mgifford.github.io/STYLES.md) built with
 Jekyll from `index.md`, `_layouts/`, and `assets/`.
+
+The homepage is assembled from reusable partials in `_includes/components/` so
+new sections can reuse existing layout and styling patterns.
+
+## Brand portability
+
+To maintain the same brand across repositories, start from
+[templates/brand-pack/](./templates/brand-pack/):
+
+1. Copy the folder into your new repository.
+2. Merge `tokens.css` into your site stylesheet.
+3. Add the AGENTS and STYLES snippets to enforce brand rules for humans and AI agents.
+4. Keep token names and component contracts stable as your brand evolves.
 
 ## Related projects
 
