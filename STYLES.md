@@ -100,6 +100,22 @@ To change the spelling variant for a derived project, update the `lang` attribut
 These rules apply to `index.md`, `_layouts/`, `assets/`, and any page with Jekyll
 front matter. They do not govern plain Markdown documentation files.
 
+### 3.0 Brand profile and pack selection
+
+This repository supports reusable brand packs under `templates/brand-packs/`.
+Each derived project should select one active brand profile and document it
+explicitly so humans and AI agents apply the same design and voice rules.
+
+**Selected profile for this repository:** `templates/brand-pack/` (single-pack mode)
+
+Create a project-specific brand pack when any of these are true:
+- The project has a distinctive visual language that should be portable.
+- The project serves a specialized audience (for example, public sector or developer tooling).
+- The project defines reusable component patterns that should stay consistent across repos.
+
+At minimum, a pack should include token definitions, component contracts, voice rules,
+and AI enforcement instructions.
+
 ### 3.1 Design tokens
 
 The canonical values live in `assets/css/site.css`. This table documents the design intent.
@@ -181,6 +197,7 @@ generating site content must follow all of them.
 - [Plain Language Guidelines — Digital.gov](https://www.plainlanguage.gov/guidelines/)
 - [GOV.UK Content Design Guide](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
+- [Brand pack templates](./templates/brand-packs/README.md)
 - [ACCESSIBILITY.md](./ACCESSIBILITY.md)
 - [SUSTAINABILITY.md](./SUSTAINABILITY.md)
 - [AGENTS.md](./AGENTS.md)

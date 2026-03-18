@@ -80,6 +80,14 @@ filled-in Markdown file — not a template with placeholders.
    project-accurate values. Do not leave placeholders. Remove sections that
    do not apply.
 
+4. **Generate a brand-pack bundle when a source style reference is provided.**
+   Include a `brand-pack/` folder specification with:
+   - `tokens.css`
+   - `components.md`
+   - `voice.md`
+   - `ai-instructions.md`
+   Mark each rule as either "Preserved from source" or "Adapted for project".
+
 ## Required structure
 
 Use this section order:
@@ -200,6 +208,8 @@ not by changing the structure.
   files I have provided.
 - Do not collapse to generic defaults (for example, "Inter + neutral grays") if
    a source style reference has stronger, distinctive choices.
+- Do not output STYLES.md alone when I explicitly ask for portable style reuse;
+   include the brand-pack bundle specification.
 
 Begin by confirming you have read the attached files, then ask your clarifying
 questions before generating anything.

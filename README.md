@@ -47,6 +47,7 @@ standards explicit, version-controlled, and testable.
 | [templates/](./templates/) | Blank scaffolds for starting from scratch |
 | [_includes/components/](./_includes/components/) | Reusable Jekyll component partials used by the homepage |
 | [templates/brand-pack/](./templates/brand-pack/) | Copy-ready brand portability kit: tokens, component contracts, and instruction snippets |
+| [templates/brand-packs/](./templates/brand-packs/) | Multi-brand starter profiles for projects that need more than one reusable style system |
 | [AGENTS.md](./AGENTS.md) | Operational instructions for AI coding agents |
 | [ACCESSIBILITY.md](./ACCESSIBILITY.md) | Foundational accessibility commitment |
 | [SUSTAINABILITY.md](./SUSTAINABILITY.md) | Environmental and efficiency constraints |
@@ -69,6 +70,10 @@ To maintain the same brand across repositories, start from
 2. Merge `tokens.css` into your site stylesheet.
 3. Add the AGENTS and STYLES snippets to enforce brand rules for humans and AI agents.
 4. Keep token names and component contracts stable as your brand evolves.
+
+For downstream adoption from another repository, copy that project's dedicated
+`brand-pack/` first, then adapt values intentionally. This preserves the original
+style fingerprint better than regenerating from prose alone.
 
 ## Related projects
 

@@ -16,6 +16,10 @@ Core docs in this repo:
 - `ACCESSIBILITY.md`: foundational accessibility commitments and guardrails.
 - `SUSTAINABILITY.md`: environmental and efficiency constraints.
 
+Brand-pack docs in this repo:
+- `templates/brand-pack/`: active single-pack baseline used by this repository.
+- `templates/brand-packs/`: starter multi-brand profiles for derived projects.
+
 ## Working principles
 - Prefer small, focused edits over broad rewrites.
 - Preserve the existing voice: concise, direct, standards-oriented.
@@ -58,6 +62,13 @@ Applies to: `index.md`, `_layouts/*`, `assets/*`, and any page with front matter
 - Preserve sentence-case headings, active voice, and plain-language defaults.
 - Prefer small, focused edits over broad rewrites.
 - Verify links and cross-file references before finishing.
+
+## Brand pack enforcement
+- Read `STYLES.md` first to identify the selected brand profile for the repo.
+- If a selected profile is declared, load and follow that profile's pack files before editing content or UI.
+- Reuse pack token names and component contracts; do not invent parallel naming systems.
+- If no profile is selected, follow `templates/brand-pack/` as the fallback baseline.
+- When adding a new reusable component, update the active brand pack documentation in the same change.
 
 ## Content requirements
 When editing standards content:

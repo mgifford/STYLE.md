@@ -1,0 +1,26 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f4f6f8;
+  --bg-soft: #e9eef4;
+  --text: #111827;
+  --muted: #4b5563;
+  --line: #d1d5db;
+  --card: #ffffff;
+  --code: #f3f4f6;
+  --button: #1d4ed8;
+  --button-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1020;
+    --bg-soft: #111933;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --line: #374151;
+    --card: #101826;
+    --code: #0b1220;
+    --button: #60a5fa;
+    --button-text: #0b1020;
+  }
+}
