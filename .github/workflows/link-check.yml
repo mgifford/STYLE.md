@@ -1,0 +1,38 @@
+name: Link Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check links in Markdown and site files
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: >-
+            --verbose
+            --no-progress
+            --max-retries 2
+            --retry-wait-time 2
+            --timeout 20
+            --config .github/lychee.toml
+            "README.md"
+            "STYLES.md"
+            "STYLES-template.md"
+            "ACCESSIBILITY.md"
+            "SUSTAINABILITY.md"
+            "AGENTS.md"
+            "templates/**/*.md"
+            "examples/**/*.md"
+            "index.md"

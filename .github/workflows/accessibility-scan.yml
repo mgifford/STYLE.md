@@ -1,0 +1,47 @@
+name: Accessibility Scan
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pa11y:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Serve built site
+        run: |
+          python3 -m http.server 4000 --directory _site > /tmp/http.log 2>&1 &
+          echo $! > /tmp/http.pid
+          sleep 2
+
+      - name: Run pa11y-ci
+        run: npx --yes pa11y-ci --config .github/pa11yci.json
+
+      - name: Stop server
+        if: always()
+        run: |
+          if [ -f /tmp/http.pid ]; then
+            kill $(cat /tmp/http.pid) || true
+          fi

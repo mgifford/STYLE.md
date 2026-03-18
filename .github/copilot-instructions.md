@@ -26,9 +26,12 @@ Key content:
 - [ACCESSIBILITY.md](../ACCESSIBILITY.md): Foundational accessibility commitments and guardrails.
 - [SUSTAINABILITY.md](../SUSTAINABILITY.md): Environmental and efficiency constraints.
 
-There is currently no CI/pipeline config checked in:
-- No `.github/workflows` directory
-- No package/build/test config files (`package.json`, `pyproject.toml`, `Makefile`, etc.)
+Current CI/pipeline config checked in:
+- `.github/workflows/link-check.yml`
+- `.github/workflows/plain-language.yml`
+- `.github/workflows/accessibility-scan.yml`
+- `.github/lychee.toml`
+- `.github/pa11yci.json`
 
 ## Command Reality (Validated)
 The following were executed in this repository:
@@ -70,14 +73,12 @@ For any change, follow this sequence:
 6. Re-run `git status --short` to confirm only intended files changed.
 
 ## Bootstrap/Build/Test/Run/Lint Guidance
-Because this is docs-only:
-- Bootstrap: no install step is required.
-- Build: no build pipeline exists.
-- Test: no test suite exists.
-- Lint: no linter config exists.
-- Run: no runtime/app entrypoint exists.
-
-Always avoid introducing Node/Python build commands unless the user explicitly asks to add that tooling.
+Because this is docs-first:
+- Bootstrap: no local install step is required for basic edits.
+- Build: GitHub Actions builds the Jekyll site for accessibility checks.
+- Test: CI includes link checking, plain-language checks, and accessibility scans.
+- Lint: CI uses `write-good` and a banned-term pass for language quality.
+- Run: no app runtime entrypoint exists outside static site preview.
 
 ## Pre-Check-In Checks Agents Should Replicate
 Before finishing a task:

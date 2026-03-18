@@ -38,6 +38,27 @@ Common commands:
 - Wrap commands, paths, and filenames in backticks.
 - Use relative links where possible.
 
+## Surface-aware editing rules
+This repository has two surfaces with shared intent but different implementation constraints.
+
+### Surface 1: Repository documentation
+Applies to: `README.md`, `AGENTS.md`, `STYLES.md`, `ACCESSIBILITY.md`, `SUSTAINABILITY.md`, `templates/*.md`, `examples/*.md`.
+- Prioritize clarity, scannability, and portability.
+- Keep guidance testable and explicit.
+- Avoid site-only implementation details unless directly relevant.
+
+### Surface 2: GitHub Pages site
+Applies to: `index.md`, `_layouts/*`, `assets/*`, and any page with front matter.
+- Follow token and layout constraints in `STYLES.md`.
+- Preserve semantic HTML and accessible structure.
+- Keep CSS minimal, reusable, and aligned with defined design tokens.
+
+### Rules that apply to both surfaces
+- `ACCESSIBILITY.md` and `SUSTAINABILITY.md` are non-negotiable constraints.
+- Preserve sentence-case headings, active voice, and plain-language defaults.
+- Prefer small, focused edits over broad rewrites.
+- Verify links and cross-file references before finishing.
+
 ## Content requirements
 When editing standards content:
 - Maintain compatibility with the three-pillar model:
