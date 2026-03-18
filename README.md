@@ -78,5 +78,5 @@ style fingerprint better than regenerating from prose alone.
 ## Related projects
 
 - [ACCESSIBILITY.md](https://github.com/mgifford/ACCESSIBILITY.md)
-- [sustainability.md](https://github.com/mgifford/sustainability.md)
-- [agents.md](https://agents.md)
+- [SUSTAINABILITY.md](https://github.com/mgifford/sustainability.md)
+- [AGENTS.md](https://agents.md)
