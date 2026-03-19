@@ -31,8 +31,8 @@ standards explicit, version-controlled, and testable.
 
 ## How to replicate this
 
-1. **Fork** this repository or copy [STYLES-template.md](./STYLES-template.md) into your project root.
-2. **Choose an example** from the [examples](./examples/) folder close to your context.
+1. **Fork** this repository or copy [STYLES-template.md](./docs/STYLES-template.md) into your project root.
+2. **Choose an example** from the [examples](./docs/examples/) folder close to your context.
 3. **Customize** — replace every `[PLACEHOLDER]` with your project's real values.
 4. **Connect the pillars** — add [ACCESSIBILITY.md](https://github.com/mgifford/ACCESSIBILITY.md) and [SUSTAINABILITY.md](https://github.com/mgifford/sustainability.md) for a full governance baseline.
 5. **Wire it up** — reference `STYLES.md` in your `AGENTS.md` and LLM system prompts.
@@ -41,30 +41,30 @@ standards explicit, version-controlled, and testable.
 
 | File / folder | Purpose |
 | :--- | :--- |
-| [STYLES.md](./STYLES.md) | This project's own style implementation (two-surface: site + docs) |
-| [STYLES-template.md](./STYLES-template.md) | Minimal skeleton to copy and customize |
-| [examples/](./examples/) | Worked examples: formal-gov, tech-minimal, low-bandwidth |
-| [templates/](./templates/) | Blank scaffolds for starting from scratch |
-| [_includes/components/](./_includes/components/) | Reusable Jekyll component partials used by the homepage |
-| [templates/brand-pack/](./templates/brand-pack/) | Copy-ready brand portability kit: tokens, component contracts, and instruction snippets |
-| [templates/brand-packs/](./templates/brand-packs/) | Multi-brand starter profiles for projects that need more than one reusable style system |
-| [AGENTS.md](./AGENTS.md) | Operational instructions for AI coding agents |
-| [ACCESSIBILITY.md](./ACCESSIBILITY.md) | Foundational accessibility commitment |
-| [SUSTAINABILITY.md](./SUSTAINABILITY.md) | Environmental and efficiency constraints |
+| [docs/STYLES.md](./docs/STYLES.md) | This project's own style implementation (two-surface: site + docs) |
+| [docs/STYLES-template.md](./docs/STYLES-template.md) | Minimal skeleton to copy and customize |
+| [docs/examples/](./docs/examples/) | Worked examples: formal-gov, tech-minimal, low-bandwidth |
+| [docs/templates/](./docs/templates/) | Blank scaffolds for starting from scratch |
+| [docs/_includes/components/](./docs/_includes/components/) | Reusable Jekyll component partials used by the homepage |
+| [docs/templates/brand-pack/](./docs/templates/brand-pack/) | Copy-ready brand portability kit: tokens, component contracts, and instruction snippets |
+| [docs/templates/brand-packs/](./docs/templates/brand-packs/) | Multi-brand starter profiles for projects that need more than one reusable style system |
+| [docs/AGENTS.md](./docs/AGENTS.md) | Operational instructions for AI coding agents |
+| [docs/ACCESSIBILITY.md](./docs/ACCESSIBILITY.md) | Foundational accessibility commitment |
+| [docs/SUSTAINABILITY.md](./docs/SUSTAINABILITY.md) | Environmental and efficiency constraints |
 
 ## GitHub Pages
 
 This project publishes a browsable site at
 [mgifford.github.io/STYLES.md](https://mgifford.github.io/STYLES.md) built with
-Jekyll from `index.md`, `_layouts/`, and `assets/`.
+Jekyll from `docs/index.md`, `docs/_layouts/`, and `docs/assets/`.
 
-The homepage is assembled from reusable partials in `_includes/components/` so
+The homepage is assembled from reusable partials in `docs/_includes/components/` so
 new sections can reuse existing layout and styling patterns.
 
 ## Brand portability
 
 To maintain the same brand across repositories, start from
-[templates/brand-pack/](./templates/brand-pack/):
+[docs/templates/brand-pack/](./docs/templates/brand-pack/):
 
 1. Copy the folder into your new repository.
 2. Merge `tokens.css` into your site stylesheet.
@@ -87,7 +87,7 @@ This section lists every AI tool known to have contributed to this project, what
 
 **Browser-based AI:** No browser-based AI is enabled. The site contains no JavaScript that invokes an AI API, no on-device model, and no AI-powered browser extension is required or assumed.
 
-**How to keep this current:** When an AI tool contributes a change, the contributor (human or AI agent) must update this table. See `AGENTS.md` for the AI disclosure requirement that governs this section.
+**How to keep this current:** When an AI tool contributes a change, the contributor (human or AI agent) must update this table. See `docs/AGENTS.md` for the AI disclosure requirement that governs this section.
 
 ## Related projects
 

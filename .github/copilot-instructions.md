@@ -1,30 +1,32 @@
 # Copilot Instructions for STYLES.md
 
 ## Read This First
-- Always read [AGENTS.md](../AGENTS.md) before making changes.
-- Always read [ACCESSIBILITY.md](../ACCESSIBILITY.md) before making standards changes.
-- Always read [SUSTAINABILITY.md](../SUSTAINABILITY.md) before making standards changes.
+- Always read [docs/AGENTS.md](../docs/AGENTS.md) before making changes.
+- Always read [docs/ACCESSIBILITY.md](../docs/ACCESSIBILITY.md) before making standards changes.
+- Always read [docs/SUSTAINABILITY.md](../docs/SUSTAINABILITY.md) before making standards changes.
 
 ## Repository Summary
 - Purpose: Define and publish a machine-readable style standard for humans and AI agents.
 - Project type: Documentation-only repository (Markdown).
-- Size and layout: Very small root-level docs with no source tree or package manifests.
+- Size and layout: `docs/` contains all Jekyll site source and documentation standards files; repo root has `README.md` and `.github/`.
 - Languages/frameworks/runtimes: Markdown only. No build framework is configured.
 
 ## High-Level Layout
 Root files currently present:
 - [README.md](../README.md)
-- [STYLES.md](../STYLES.md)
-- [AGENTS.md](../AGENTS.md)
-- [ACCESSIBILITY.md](../ACCESSIBILITY.md)
-- [SUSTAINABILITY.md](../SUSTAINABILITY.md)
+
+Jekyll site source (in `docs/`):
+- [docs/STYLES.md](../docs/STYLES.md)
+- [docs/AGENTS.md](../docs/AGENTS.md)
+- [docs/ACCESSIBILITY.md](../docs/ACCESSIBILITY.md)
+- [docs/SUSTAINABILITY.md](../docs/SUSTAINABILITY.md)
 
 Key content:
 - [README.md](../README.md): Project overview, three-pillar model, usage steps.
-- [STYLES.md](../STYLES.md): Canonical standards text for reuse.
-- [AGENTS.md](../AGENTS.md): Operational instructions for coding agents.
-- [ACCESSIBILITY.md](../ACCESSIBILITY.md): Foundational accessibility commitments and guardrails.
-- [SUSTAINABILITY.md](../SUSTAINABILITY.md): Environmental and efficiency constraints.
+- [docs/STYLES.md](../docs/STYLES.md): Canonical standards text for reuse.
+- [docs/AGENTS.md](../docs/AGENTS.md): Operational instructions for coding agents.
+- [docs/ACCESSIBILITY.md](../docs/ACCESSIBILITY.md): Foundational accessibility commitments and guardrails.
+- [docs/SUSTAINABILITY.md](../docs/SUSTAINABILITY.md): Environmental and efficiency constraints.
 
 Current CI/pipeline config checked in:
 - `.github/workflows/link-check.yml`
@@ -65,7 +67,7 @@ Tooling caveat observed in this environment:
 
 ## Recommended Execution Order
 For any change, follow this sequence:
-1. Read [AGENTS.md](../AGENTS.md), then [ACCESSIBILITY.md](../ACCESSIBILITY.md), then [SUSTAINABILITY.md](../SUSTAINABILITY.md), then [README.md](../README.md), then [STYLES.md](../STYLES.md).
+1. Read [docs/AGENTS.md](../docs/AGENTS.md), then [docs/ACCESSIBILITY.md](../docs/ACCESSIBILITY.md), then [docs/SUSTAINABILITY.md](../docs/SUSTAINABILITY.md), then [README.md](../README.md), then [docs/STYLES.md](../docs/STYLES.md).
 2. Inspect current state: `git status --short`.
 3. Make minimal Markdown edits scoped to the user request.
 4. Validate references and formatting by re-reading modified files.
@@ -85,7 +87,7 @@ Before finishing a task:
 - Confirm changed files are expected: `git status --short`.
 - Confirm diff size and scope: `git diff --stat` and `git diff`.
 - Confirm no accidental artifacts (especially `package-lock.json`).
-- Confirm instructions in [README.md](../README.md), [STYLES.md](../STYLES.md), [AGENTS.md](../AGENTS.md), [ACCESSIBILITY.md](../ACCESSIBILITY.md), and [SUSTAINABILITY.md](../SUSTAINABILITY.md) remain consistent.
+- Confirm instructions in [README.md](../README.md), [docs/STYLES.md](../docs/STYLES.md), [docs/AGENTS.md](../docs/AGENTS.md), [docs/ACCESSIBILITY.md](../docs/ACCESSIBILITY.md), and [docs/SUSTAINABILITY.md](../docs/SUSTAINABILITY.md) remain consistent.
 
 ## Architecture and Editing Guidance
 - Treat this as a standards/spec repository, not an application codebase.
@@ -94,7 +96,7 @@ Before finishing a task:
 - Preserve portability: avoid tool-specific assumptions in standards text unless explicitly requested.
 
 ## Search Minimization Guidance
-Trust this file and [AGENTS.md](../AGENTS.md) first.
+Trust this file and [docs/AGENTS.md](../docs/AGENTS.md) first.
 Only perform broader repository searches if:
 - The requested task references files not documented here.
 - The documented command behavior changes.
