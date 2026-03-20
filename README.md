@@ -82,6 +82,7 @@ This section lists every AI tool known to have contributed to this project, what
 | AI tool | Role | Where it operates |
 | :--- | :--- | :--- |
 | GitHub Copilot (Claude Sonnet) | Used to draft and refine documentation, including this disclosure section and related `AGENTS.md` instructions | Build-time / authoring only — not present at runtime or in the browser |
+| GitHub Copilot (Claude Sonnet 4.5) | Used to expand the framework section (`section-framework.html`), add sections 2.5–2.7 and section 6 to `STYLES.md`, and update `assets/css/site.css` for new layout classes | Build-time / authoring only — not present at runtime or in the browser |
 
 **Runtime AI:** No AI model runs at runtime. This project is a static documentation site served by GitHub Pages. No server-side or client-side AI inference occurs when the site is loaded.
 

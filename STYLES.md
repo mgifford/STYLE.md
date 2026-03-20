@@ -16,9 +16,10 @@ This project has two surfaces that share the same standards:
 | **Repository documentation** | `README.md`, `AGENTS.md`, `STYLES.md`, `ACCESSIBILITY.md`, `SUSTAINABILITY.md`, `examples/*.md`, `templates/*.md` | Contributors, adopters, and AI agents reading files directly on GitHub |
 
 **What applies to both surfaces:**
-- Section 2 — Content and voice standards (plain language, active voice, sentence-case headings, American English)
+- Section 2 — Content and voice standards (plain language, active voice, sentence-case headings, American English, abbreviations, citation, content structure)
 - Section 4 — Accessibility and semantic logic (heading hierarchy, alt text, link text)
 - Section 5 — AI agent instructions
+- Section 6 — Content governance
 
 **What applies to the website only:**
 - Section 3 — Design foundations (CSS tokens, typography, breakpoints, page layout)
@@ -92,6 +93,67 @@ To change the spelling variant for a derived project, update the `lang` attribut
 
 > **AI agents:** Always check the `lang` attribute in `_config.yml` and apply the
 > corresponding spelling rules throughout the document.
+
+### 2.5 Abbreviations, numbers, and dates
+
+#### Abbreviations
+
+- Spell out an abbreviation on first use, then use the short form: "Accessibility
+  Guidelines (WCAG)."
+- Do not use periods in acronyms: "HTML," "CSS," "AI" — not "H.T.M.L."
+- Avoid jargon-only abbreviations without explanation unless writing for a specialist audience.
+
+#### Numbers
+
+| Context | Rule | Example |
+| :--- | :--- | :--- |
+| **In body text** | Spell out one through nine; use numerals for 10 and above | "three pillars," "12 tokens" |
+| **Starts a sentence** | Always spell out | "Twelve steps are required." |
+| **Percentages** | Use numerals and the % symbol | "4.5% contrast ratio" |
+| **Versions and technical values** | Always use numerals | "WCAG 2.2," "font-size: 1rem" |
+
+#### Dates
+
+- Use **ISO 8601** for machine-readable dates: `2025-06-01`.
+- Use **spelled-out months** for human-readable dates: "June 1, 2025" (American English)
+  or "1 June 2025" (British/Canadian English).
+- Do not use all-numeric dates that could be ambiguous across locales (01/06/2025).
+
+### 2.6 Attribution and citation
+
+When quoting, adapting, or referencing external work in documentation:
+
+- **Quote directly** only when the original wording matters and cannot be improved.
+  Block-quote passages over three lines.
+- **Paraphrase** when the idea is what matters. Paraphrasing does not remove the need
+  to credit the source.
+- **Credit the source** inline or in a references section: "Derived from UK GDS Content
+  Design Guide."
+- **Link to the source** rather than reproducing large portions of external content.
+- **Do not reproduce** entire copyrighted works, style guides, or specifications.
+  Reference them and link to the canonical source.
+
+> **AI agents:** Do not reproduce large passages from external style guides or
+> specifications verbatim. Summarize, paraphrase, and link to the canonical source.
+
+### 2.7 Content structure and document types
+
+Different document types follow different patterns. Use the appropriate structure
+rather than treating all Markdown files the same.
+
+| Document type | Purpose | Structure pattern |
+| :--- | :--- | :--- |
+| **Reference** (STYLES.md, ACCESSIBILITY.md) | Authoritative rules; consulted, not read cover-to-cover | Numbered sections, tables, bullet rules |
+| **Guide or how-to** (examples/, README.md) | Step-by-step walkthrough for a specific audience | Numbered steps, "you" voice, outcome-focused |
+| **Template** (STYLES-template.md) | Scaffold to copy and customize | Placeholders clearly marked, minimal prose |
+| **Explainer** (index.md) | Introduces concepts to someone unfamiliar with the project | Short paragraphs, definitions, analogies |
+
+Rules that apply to all document types:
+
+- Use heading levels in order (`#` → `##` → `###`). Do not skip levels.
+- Open each document with a one-sentence purpose statement.
+- Keep paragraphs short: three to five sentences is a good maximum.
+- Prefer short sentences over long, complex ones.
 
 ---
 
@@ -192,11 +254,36 @@ generating site content must follow all of them.
 
 ---
 
-## 6. References
+## 6. Content governance
+
+These rules describe how this style guide itself is maintained and updated.
+
+- **Ownership:** The project maintainer is responsible for keeping these standards
+  current. Contributors may propose changes via pull request.
+- **Versioning:** Changes to standards that affect existing content should be noted
+  in commit messages and, for significant changes, in a changelog comment in this file.
+- **Conflict resolution:** When two rules conflict, the more specific rule takes
+  precedence. When this file conflicts with ACCESSIBILITY.md, ACCESSIBILITY.md wins.
+- **Review cycle:** Standards should be reviewed against current practice at least
+  once per year or when a major tool or platform change occurs.
+- **Deprecation:** Remove outdated rules rather than leaving contradictions. A rule
+  that no longer applies should be deleted, not commented out.
+
+> **AI agents:** Do not silently override or quietly contradict rules in this file.
+> If a requested change would conflict with an existing rule, surface the conflict
+> and ask for clarification before proceeding.
+
+---
+
+## 7. References
 
 - [Plain Language Guidelines — Digital.gov](https://www.plainlanguage.gov/guidelines/)
 - [GOV.UK Content Design Guide](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
+- [CivicActions Style Guide](https://civicactions-style-guide.readthedocs.io/en/latest/)
+- [Brad Frost: Style Guides](https://bradfrost.com/blog/post/style-guides/)
+- [Nielsen Norman Group: Design Systems vs. Style Guides](https://www.nngroup.com/articles/design-systems-vs-style-guides/)
+- [Purdue OWL — Avoiding Plagiarism](https://owl.purdue.edu/owl/avoiding_plagiarism/guide_overview.html)
 - [Brand pack templates](./templates/brand-packs/README.md)
 - [ACCESSIBILITY.md](./ACCESSIBILITY.md)
 - [SUSTAINABILITY.md](./SUSTAINABILITY.md)

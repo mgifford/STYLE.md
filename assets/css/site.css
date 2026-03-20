@@ -189,10 +189,21 @@ a.card:focus-visible {
   outline-offset: 2px;
 }
 
-.card h3 {
+.card h3,
+.card h4 {
   margin-top: 0;
   margin-bottom: 0.35rem;
   font-size: 1.02rem;
+}
+
+.subsection-heading {
+  margin: 2rem 0 0.5rem;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  letter-spacing: -0.01em;
+}
+
+.cards-2col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .card p {
