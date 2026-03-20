@@ -99,5 +99,5 @@ Performance budget: **target < 50 KB total page weight** (HTML + CSS + fonts).
 - [ACCESSIBILITY.md](../ACCESSIBILITY.md)
 - [SUSTAINABILITY.md](../SUSTAINABILITY.md)
 - [Sustainable Web Design — sustainablewebdesign.org](https://sustainablewebdesign.org/)
-- [Web Sustainability Guidelines — W3C](https://www.w3.org/TR/2024/NOTE-sustyweb-20240709/)
+- [Web Sustainability Guidelines — W3C](https://www.w3.org/TR/sustyweb/)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
