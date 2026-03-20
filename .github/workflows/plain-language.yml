@@ -19,8 +19,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-            find . -type f -name "*.md" -not -path "./.git/*" -print0 \
-              | xargs -0 npx --yes write-good        run: |
+          node-version: 'lts/*'
+
+      - name: Check plain language
+        run: |
           npx --yes write-good \
             README.md STYLES.md STYLES-template.md \
             ACCESSIBILITY.md SUSTAINABILITY.md AGENTS.md \

@@ -110,6 +110,6 @@ Performance budget: **< 30 KB total initial page weight** (HTML + CSS). Zero ext
 - [ACCESSIBILITY.md](../../ACCESSIBILITY.md)
 - [SUSTAINABILITY.md](../../SUSTAINABILITY.md)
 - [Sustainable Web Design — sustainablewebdesign.org](https://sustainablewebdesign.org/)
-- [Web Sustainability Guidelines — W3C WSG](https://www.w3.org/TR/2024/NOTE-sustyweb-20240709/)
+- [Web Sustainability Guidelines — W3C WSG](https://www.w3.org/TR/sustyweb/)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
-- [WHO Plain Language Toolkit](https://www.who.int/tools/plain-language-toolkit)
+- [WHO Plain Language Toolkit](https://www.who.int/about/communications/plain-language)
