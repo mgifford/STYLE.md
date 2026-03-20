@@ -3,23 +3,93 @@
     <h2>The framework</h2>
     <div class="prose">
       <p>
-        STYLES.md is one part of a three-pillar ecosystem. Together, these standards define
-        not just <em>what</em> you build, but <em>how</em> you build it:
+        A style guide is more than a color palette or a PDF that gets ignored after launch.
+        Done well, a style framework defines how a project <em>thinks and communicates</em> —
+        across writing, visual design, code, and AI agent behavior — consistently and in a
+        form every contributor can follow.
+      </p>
+      <p>
+        STYLES.md draws on established style guide practice — editorial voice guides, design
+        token systems, brand books, and content strategy — and puts the result in a
+        <strong>machine-readable file</strong> at your repository root where humans, automation,
+        and AI agents can all find and enforce it.
+      </p>
+    </div>
+
+    <h3 class="subsection-heading">The three pillars</h3>
+    <div class="prose">
+      <p>
+        Together, these three open-standard files define not just <em>what</em> you build,
+        but <em>how</em> you build it:
       </p>
     </div>
     <div class="cards">
       <a class="card" href="https://github.com/mgifford/ACCESSIBILITY.md">
-        <h3>ACCESSIBILITY.md</h3>
+        <h4>ACCESSIBILITY.md</h4>
         <p>The foundational requirement. Style is a subset of accessibility. Defines inclusion guardrails and contributor requirements.</p>
       </a>
       <a class="card" href="https://github.com/mgifford/sustainability.md">
-        <h3>SUSTAINABILITY.md</h3>
+        <h4>SUSTAINABILITY.md</h4>
         <p>The environmental constraint. Good style is lightweight and efficient. Defines compute and content efficiency rules.</p>
       </a>
       <a class="card" href="https://github.com/mgifford/STYLES.md">
-        <h3>STYLES.md</h3>
+        <h4>STYLES.md</h4>
         <p>The expression layer. Voice, tone, design tokens, and AI agent constraints for your specific project.</p>
       </a>
+    </div>
+
+    <div class="prose steps-footer">
+      <h3 class="subsection-heading">What a complete style framework covers</h3>
+      <p>
+        Traditional style guides — from editorial manuals to full brand books — address a
+        consistent set of dimensions. STYLES.md covers all of them in a single, portable file:
+      </p>
+    </div>
+    <div class="cards cards-2col">
+      <div class="card">
+        <h4>Voice and tone</h4>
+        <p>How the project sounds — authoritative peer, plain language, active voice, and how tone shifts by context (onboarding, technical, error states).</p>
+      </div>
+      <div class="card">
+        <h4>Grammar and mechanics</h4>
+        <p>Sentence case headings, Oxford comma, active voice, spelling variant, abbreviations, numbers, and date formats. The rules that make every sentence consistent.</p>
+      </div>
+      <div class="card">
+        <h4>Visual language and design tokens</h4>
+        <p>Color, typography, spacing, and breakpoints defined as CSS custom properties so humans and AI agents apply exactly the same values.</p>
+      </div>
+      <div class="card">
+        <h4>Content structure</h4>
+        <p>Heading hierarchy, list types, link text conventions, and how different document types (guides, references, examples) are organized and formatted.</p>
+      </div>
+      <div class="card">
+        <h4>Accessibility requirements</h4>
+        <p>Contrast ratios, alt text, landmark roles, and keyboard behavior — the non-negotiable guardrails that apply to every surface and every contributor.</p>
+      </div>
+      <div class="card">
+        <h4>AI and automation rules</h4>
+        <p>Explicit constraints for AI coding agents: which surface is being edited, which files take precedence, and what must never be overridden automatically.</p>
+      </div>
+    </div>
+
+    <div class="prose steps-footer">
+      <h3 class="subsection-heading">Style guide, design system, or pattern library?</h3>
+      <p>
+        These terms are often used interchangeably but they describe different tools with
+        different scopes:
+      </p>
+      <ul>
+        <li>A <strong>style guide</strong> defines visual design language: color, typography, spacing, and iconography.</li>
+        <li>A <strong>voice and tone guide</strong> defines how the project writes, what words it uses, and how it adjusts for context.</li>
+        <li>A <strong>pattern library</strong> packages reusable UI components and documents their correct usage.</li>
+        <li>A <strong>design system</strong> combines all of the above — style guide, component library, and governance rules — into one maintained system.</li>
+      </ul>
+      <p>
+        STYLES.md is a <strong>style and voice guide with AI enforcement</strong>. It pairs
+        with your component library, linter configuration, and CI pipeline rather than
+        replacing them. The three-pillar model extends it to cover accessibility and
+        sustainability as first-class constraints.
+      </p>
     </div>
   </div>
 </section>
