@@ -1,0 +1,373 @@
+version: 1
+generated_from: https://github.com/mgifford/STYLES.md/blob/main/STYLES.md#7-references
+generated_on: '2026-03-20'
+notes:
+  - Machine-readable list of trusted style, design, and content sources for the web.
+  - Update authority_level, topic_tags, and ownership during curation.
+  - 'AI scraping policy: Sources can be marked with ''ai_scraping'' field. Values: ''allowed'' (default if omitted),
+    ''prohibited'' (do not scrape/train on content), ''restricted'' (use only for reference/citation, not training).'
+sources:
+  - id: smashingmagazine-com
+    domain: Smashing Magazine
+    url: smashingmagazine.com
+    full_url: https://www.smashingmagazine.com/
+    best_for: web design, UX, design systems, front-end development, typography
+    description: >
+      Long-running independent publication covering web design, front-end development,
+      UX, and digital best practices. A primary reference for practical design
+      guidance and in-depth technical articles.
+    authority_level: authoritative
+    topic_tags:
+      - design
+      - ux
+      - typography
+      - front-end
+      - design-systems
+      - content
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: smashingmagazine-design-category
+    domain: Smashing Magazine – Design
+    url: smashingmagazine.com/category/design/
+    full_url: https://www.smashingmagazine.com/category/design/
+    best_for: visual design, UI patterns, design inspiration, layout
+    description: >
+      Curated collection of Smashing Magazine articles focused on visual design,
+      UI patterns, layout, and design inspiration for digital products.
+    authority_level: to_review
+    topic_tags:
+      - design
+      - ui
+      - layout
+      - visual-design
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: smashingmagazine-design-systems
+    domain: Smashing Magazine – Design Systems, Inspiration and Resources
+    url: smashingmagazine.com/2022/11/design-systems-inspiration-resources-case-studies/
+    full_url: https://www.smashingmagazine.com/2022/11/design-systems-inspiration-resources-case-studies/
+    best_for: design systems, component libraries, case studies, inspiration
+    description: >
+      Comprehensive roundup of design system inspiration, resources, and case studies
+      from major organizations. Useful for understanding real-world design system
+      implementations and the principles behind them.
+    authority_level: to_review
+    topic_tags:
+      - design-systems
+      - components
+      - case-studies
+      - inspiration
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: smashingmagazine-resources-category
+    domain: Smashing Magazine – Resources
+    url: smashingmagazine.com/category/resources/
+    full_url: https://www.smashingmagazine.com/category/resources/
+    best_for: curated tools, checklists, resources, references for web design
+    description: >
+      Curated resource articles from Smashing Magazine covering tools, checklists,
+      and references across web design, development, and UX practice.
+    authority_level: to_review
+    topic_tags:
+      - resources
+      - tools
+      - checklists
+      - design
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: smashingmagazine-comprehensive-web-design
+    domain: Smashing Magazine – A Comprehensive Guide To Web Design
+    url: smashingmagazine.com/2017/11/comprehensive-guide-web-design/
+    full_url: https://www.smashingmagazine.com/2017/11/comprehensive-guide-web-design/
+    best_for: web design fundamentals, layout, typography, navigation, forms, performance
+    description: >
+      Extensive guide covering core web design principles including layout, typography,
+      navigation, mobile design, forms, and performance considerations. A durable
+      reference for foundational design decision-making.
+    authority_level: to_review
+    topic_tags:
+      - web-design
+      - layout
+      - typography
+      - navigation
+      - forms
+      - mobile
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: smashingmagazine-designing-for-stress
+    domain: Smashing Magazine – Designing For Stress And Emergency
+    url: smashingmagazine.com/2025/11/designing-for-stress-emergency/
+    full_url: https://www.smashingmagazine.com/2025/11/designing-for-stress-emergency/
+    best_for: stress cases, emergency UX, inclusive design, resilient interfaces
+    description: >
+      Article examining how to design interfaces that perform well for users
+      under stress or in emergency situations. Relevant to inclusive and resilient
+      design practice.
+    authority_level: to_review
+    topic_tags:
+      - ux
+      - inclusive-design
+      - stress-cases
+      - resilience
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: smashingmagazine-ux-design-guide
+    domain: Smashing Magazine – A Comprehensive Guide To UX Design
+    url: smashingmagazine.com/2018/02/comprehensive-guide-user-experience-design/
+    full_url: https://www.smashingmagazine.com/2018/02/comprehensive-guide-user-experience-design/
+    best_for: user experience design, UX fundamentals, research, usability, interaction design
+    description: >
+      Comprehensive overview of user experience design covering research methods,
+      information architecture, interaction design, usability testing, and the
+      relationship between UX and visual design.
+    authority_level: to_review
+    topic_tags:
+      - ux
+      - user-research
+      - information-architecture
+      - usability
+      - interaction-design
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: smashingmagazine-elements-of-navigation
+    domain: Smashing Magazine – The Elements Of Navigation
+    url: smashingmagazine.com/2012/03/the-elements-of-navigation/
+    full_url: https://www.smashingmagazine.com/2012/03/the-elements-of-navigation/
+    best_for: navigation design, IA, wayfinding, menus, breadcrumbs
+    description: >
+      Foundational article examining the core elements of website navigation,
+      including breadcrumbs, search, menus, and wayfinding patterns. A durable
+      reference for navigation design decisions.
+    authority_level: to_review
+    topic_tags:
+      - navigation
+      - information-architecture
+      - wayfinding
+      - menus
+    jurisdiction: global
+    last_reviewed: null
+    owner: Smashing Magazine GmbH
+    license: unknown
+    status: active
+
+  - id: plainlanguage-gov-guidelines
+    domain: Plain Language Guidelines – Digital.gov
+    url: plainlanguage.gov/guidelines/
+    full_url: https://www.plainlanguage.gov/guidelines/
+    best_for: plain language, writing standards, content design, voice and tone
+    description: >
+      Official U.S. federal plain language guidelines covering audience, organization,
+      words, sentences, and testing. Canonical reference for plain language writing
+      in digital content.
+    authority_level: authoritative
+    topic_tags:
+      - plain-language
+      - content-design
+      - writing
+      - voice-and-tone
+      - government
+    jurisdiction: us
+    last_reviewed: null
+    owner: Plain Language Action and Information Network (PLAIN)
+    license: public-domain
+    status: active
+
+  - id: govuk-content-design-guide
+    domain: GOV.UK Content Design Guide
+    url: gov.uk/guidance/content-design/writing-for-gov-uk
+    full_url: https://www.gov.uk/guidance/content-design/writing-for-gov-uk
+    best_for: content design, writing standards, plain language, government digital services
+    description: >
+      GOV.UK guidance on content design and writing for digital services. Covers
+      style conventions, plain English, formatting, and content principles widely
+      adopted beyond the UK government.
+    authority_level: authoritative
+    topic_tags:
+      - content-design
+      - plain-language
+      - writing
+      - government
+      - style-guide
+    jurisdiction: uk
+    last_reviewed: null
+    owner: Government Digital Service (GDS)
+    license: OGL v3.0
+    status: active
+
+  - id: nngroup-design-systems-vs-style-guides
+    domain: Nielsen Norman Group – Design Systems vs. Style Guides
+    url: nngroup.com/articles/design-systems-vs-style-guides/
+    full_url: https://www.nngroup.com/articles/design-systems-vs-style-guides/
+    best_for: design systems, style guides, component libraries, NN/g research
+    description: >
+      Nielsen Norman Group article clarifying the distinction between design systems,
+      style guides, and component libraries. A useful reference for scoping and
+      naming design governance artefacts.
+    authority_level: authoritative
+    topic_tags:
+      - design-systems
+      - style-guides
+      - components
+      - ux
+    jurisdiction: global
+    last_reviewed: null
+    owner: Nielsen Norman Group
+    license: unknown
+    status: active
+
+  - id: nngroup-com
+    domain: Nielsen Norman Group
+    url: nngroup.com
+    full_url: https://www.nngroup.com/
+    best_for: UX research, usability, interaction design, evidence-based design
+    description: >
+      Research and consulting firm specializing in user experience. Publishes
+      evidence-based articles, reports, and training on usability, interaction
+      design, and UX best practices.
+    authority_level: authoritative
+    topic_tags:
+      - ux
+      - usability
+      - research
+      - interaction-design
+    jurisdiction: global
+    last_reviewed: null
+    owner: Nielsen Norman Group
+    license: unknown
+    status: active
+
+  - id: bradfrost-style-guides
+    domain: Brad Frost – Style Guides
+    url: bradfrost.com/blog/post/style-guides/
+    full_url: https://bradfrost.com/blog/post/style-guides/
+    best_for: style guides, atomic design, pattern libraries, component-driven design
+    description: >
+      Brad Frost's foundational post on style guides as living design references
+      for digital products. Closely related to the Atomic Design methodology and
+      practical pattern library creation.
+    authority_level: to_review
+    topic_tags:
+      - style-guides
+      - atomic-design
+      - pattern-libraries
+      - design-systems
+    jurisdiction: global
+    last_reviewed: null
+    owner: Brad Frost
+    license: unknown
+    status: active
+
+  - id: alistapart-com
+    domain: A List Apart
+    url: alistapart.com
+    full_url: https://alistapart.com/
+    best_for: web standards, content design, interaction design, inclusive design
+    description: >
+      Long-running magazine for people who make websites. Known for in-depth,
+      forward-thinking articles on web standards, CSS, content strategy, and
+      inclusive design.
+    authority_level: authoritative
+    topic_tags:
+      - web-standards
+      - content-design
+      - css
+      - inclusive-design
+      - typography
+    jurisdiction: global
+    last_reviewed: null
+    owner: A List Apart
+    license: unknown
+    status: active
+
+  - id: designsystem-digital-gov
+    domain: U.S. Web Design System (USWDS)
+    url: designsystem.digital.gov
+    full_url: https://designsystem.digital.gov/
+    best_for: design tokens, accessible components, government digital standards, style
+    description: >
+      The U.S. Web Design System provides design tokens, components, and guidance
+      for building accessible, consistent federal websites. A model for design
+      system governance in public-sector contexts.
+    authority_level: authoritative
+    topic_tags:
+      - design-systems
+      - design-tokens
+      - government
+      - accessibility
+      - components
+    jurisdiction: us
+    last_reviewed: null
+    owner: General Services Administration (GSA) / Technology Transformation Services (TTS)
+    license: public-domain
+    status: active
+
+  - id: w3c-wcag22
+    domain: WCAG 2.2
+    url: w3.org/TR/WCAG22/
+    full_url: https://www.w3.org/TR/WCAG22/
+    best_for: accessibility standards, contrast, text, interaction requirements
+    description: >
+      W3C Web Content Accessibility Guidelines 2.2. Normative reference for
+      contrast ratios, text sizing, focus indicators, and other visual and
+      interaction requirements that directly constrain style decisions.
+    authority_level: authoritative
+    topic_tags:
+      - accessibility
+      - contrast
+      - wcag
+      - standards
+      - interaction
+    jurisdiction: global
+    last_reviewed: null
+    owner: W3C Web Accessibility Initiative (WAI)
+    license: W3C Document License
+    status: active
+
+  - id: civicactions-style-guide
+    domain: CivicActions Style Guide
+    url: civicactions-style-guide.readthedocs.io/en/latest/
+    full_url: https://civicactions-style-guide.readthedocs.io/en/latest/
+    best_for: open-source content style, plain language, civic tech writing
+    description: >
+      Open-source content and writing style guide from CivicActions covering
+      voice, tone, grammar, and formatting conventions for civic technology
+      projects.
+    authority_level: to_review
+    topic_tags:
+      - content-design
+      - plain-language
+      - style-guide
+      - civic-tech
+    jurisdiction: us
+    last_reviewed: null
+    owner: CivicActions
+    license: unknown
+    status: active

@@ -18,6 +18,7 @@ from the [templates](../templates/) folder to build your own.
 | [tech-minimal/STYLES.md](./tech-minimal/STYLES.md) | Developer tool — speed-focused, documentation-intensive |
 | [low-bandwidth/STYLES.md](./low-bandwidth/STYLES.md) | Sustainability-first, low-resource, offline-capable project |
 | [STYLES-discovery-prompt.md](./STYLES-discovery-prompt.md) | LLM prompt to generate a STYLES.md for an existing project |
+| [TRUSTED_SOURCES.yaml](./TRUSTED_SOURCES.yaml) | Machine-readable list of trusted style and design references |
 
 ## How these examples differ from templates
 
