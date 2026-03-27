@@ -85,6 +85,8 @@ This section lists every AI tool known to have contributed to this project, what
 | GitHub Copilot (Claude Sonnet 4.5) | Used to expand the framework section (`section-framework.html`), add sections 2.5–2.7 and section 6 to `STYLES.md`, and update `assets/css/site.css` for new layout classes | Build-time / authoring only — not present at runtime or in the browser |
 | GitHub Copilot (Claude Sonnet 4.6) | Used to integrate Opquast Digital Quality presentation rules into `STYLES.md` sections 3, 4, and 7 | Build-time / authoring only — not present at runtime or in the browser |
 | GitHub Copilot (Claude Sonnet 4.6) | Used to add usability heuristics section (§ 3.5) and corresponding reference to `STYLES.md` | Build-time / authoring only — not present at runtime or in the browser |
+| GitHub Copilot (Claude Sonnet 4.5) | Used to add light/dark mode toggle (sun/moon icons, `localStorage` persistence, OS preference sync) to `_layouts/default.html` and `assets/css/site.css` | Build-time / authoring only — not present at runtime or in the browser |
+| GitHub Copilot (Claude Sonnet 4.6) | Used to align light/dark toggle `aria-label` with the ACCESSIBILITY.md reference site and restore the AI disclosure entry that was dropped in the PR #14 merge | Build-time / authoring only — not present at runtime or in the browser |
 
 **Runtime AI:** No AI model runs at runtime. This project is a static documentation site served by GitHub Pages. No server-side or client-side AI inference occurs when the site is loaded.
 
