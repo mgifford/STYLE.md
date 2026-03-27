@@ -231,6 +231,29 @@ Write base CSS for the smallest screen first, then enhance with `min-width` quer
 | `forced-colors` | Planned | Not yet implemented |
 | `print` | Recommended | Hide navigation and decorative elements; render body text at ≥ 12pt; append `href` values on links |
 
+### 3.5 Usability heuristics
+
+Style decisions in this project are informed by Nielsen Norman Group's
+[ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/).
+Each heuristic maps to concrete style and interaction choices.
+
+| Heuristic | Style implication |
+| :--- | :--- |
+| **1. Visibility of system status** | Provide visible feedback for all interactive states: hover, focus, active, and error. Use status labels in UI components so users always know what is happening. |
+| **2. Match between system and the real world** | Use plain, familiar language (see § 2.2). Avoid technical jargon unless writing for a specialist audience. Order and group content the way users think, not the way the system is built. |
+| **3. User control and freedom** | Design error states with a clear path forward. Do not trap users in irreversible flows without confirmation. Provide visible "undo" or "cancel" options wherever an action can be reversed. |
+| **4. Consistency and standards** | Reuse the same tokens, patterns, and vocabulary defined in this file. Do not invent parallel naming systems. Platform and industry conventions take priority over novel patterns. |
+| **5. Error prevention** | Prefer design that prevents problems over good error messages. Provide inline constraints, confirmation steps, and warnings before destructive actions. |
+| **6. Recognition rather than recall** | Surface navigation options and contextual cues visibly. Do not require users to remember information across steps or screens. Make objects, actions, and options visible or easily retrievable. |
+| **7. Flexibility and efficiency of use** | Provide keyboard shortcuts and accelerators for expert users without cluttering the default experience for newcomers. Allow users to tailor frequent actions. |
+| **8. Aesthetic and minimalist design** | Remove decorative elements that compete with content. Every visual and textual element must earn its place. Irrelevant information reduces the relative visibility of useful information. |
+| **9. Help users recognize, diagnose, and recover from errors** | Write error messages in plain language (see § 2.1 error-state tone), explain the cause precisely, and suggest a clear remedy. Never blame the user. |
+| **10. Help and documentation** | Ensure documentation is easy to search, scoped to a specific task, and lists concrete steps. Prefer inline context over separate help pages when the user may not think to look for help. |
+
+Where a heuristic conflicts with accessibility or sustainability constraints,
+those constraints take precedence (see [ACCESSIBILITY.md](./ACCESSIBILITY.md)
+and [SUSTAINABILITY.md](./SUSTAINABILITY.md)).
+
 ---
 
 ## 4. Accessibility and semantic logic
@@ -296,6 +319,7 @@ These rules describe how this style guide itself is maintained and updated.
 - [CivicActions Style Guide](https://civicactions-style-guide.readthedocs.io/en/latest/)
 - [Brad Frost: Style Guides](https://bradfrost.com/blog/post/style-guides/)
 - [Nielsen Norman Group: Design Systems vs. Style Guides](https://www.nngroup.com/articles/design-systems-vs-style-guides/)
+- [Nielsen Norman Group: Ten Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
 - [Purdue OWL — Avoiding Plagiarism](https://owl.purdue.edu/owl/avoiding_plagiarism/guide_overview.html)
 - [Brand pack templates](./templates/brand-packs/README.md)
 - [ACCESSIBILITY.md](./ACCESSIBILITY.md)
